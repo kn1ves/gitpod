@@ -15,9 +15,9 @@ rm -f nvim-linux64.tar.gz
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
 # Make PATH persistent
-if ! grep -q "/opt/nvim-linux64/bin" ~/.bashrc; then
-    echo 'export PATH="$PATH:/opt/nvim-linux64/bin"' >> ~/.bashrc
+if ! grep -q "/opt/nvim-linux64/bin" ~/.zshrc; then
+    echo 'export PATH="$PATH:/opt/nvim-linux64/bin"' >> ~/.zshrc
 fi
 
 # Reload the shell configuration (for current session)
-source ~/.bashrc
+source ~/.zshrc
