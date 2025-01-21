@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # Install Neovim
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
 sudo rm -rf /opt/nvim
@@ -19,5 +17,6 @@ if ! grep -q "/opt/nvim-linux64/bin" ~/.zshrc; then
     echo 'export PATH="$PATH:/opt/nvim-linux64/bin"' >> ~/.zshrc
 fi
 
-# Reload the shell configuration (for current session)
-source ~/.zshrc
+# Install Cody CLI
+yarn global add @sourcegraph/cody
+export SRC_ENDPOINT=https://blackstone.sourcegraph.com
