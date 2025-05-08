@@ -1,1 +1,1 @@
-alias c='cd'
+alias hello='echo Hello'

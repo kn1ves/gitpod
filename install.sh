@@ -16,7 +16,3 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 if ! grep -q "/opt/nvim-linux64/bin" ~/.zshrc; then
     echo 'export PATH="$PATH:/opt/nvim-linux64/bin"' >> ~/.zshrc
 fi
-
-# Install Cody CLI
-yarn global add @sourcegraph/cody
-export SRC_ENDPOINT=https://blackstone.sourcegraph.com
